@@ -1,16 +1,16 @@
 body {
-    background-color: #b5a7f1;
+    background-color: #9ee4d6;
 }
 
 
 .navbar {
-    background-color: blueviolet;
-    color: aquamarine;
+    background-color: #fdc835;
+    color: #ffffff;
     width: 100%;
 }
 
 .brand {
-    color: aliceblue;
+    color: #ffffff;
 }
 
 .navbar ul {
