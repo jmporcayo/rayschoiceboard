@@ -1,6 +1,6 @@
 import React from "react";
 import "./HelloBootstrap.css";
-import Lightbox from "react-lightbox-component";
+
 
   // build an array of url
   var imageUrl = [
@@ -92,10 +92,4 @@ function ImageCard(props){
 export default HelloBootstrap;
 
 
-// const App = () => (
-//   <div>
 
-//     <Lightbox images={imageUrl}  { src: "imageUrl",}/>
-
-//   </div>
-// );
