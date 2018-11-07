@@ -78,7 +78,7 @@ function ImageCard(props){
   <div className="card  mb-3" style={{'maxWidth': '10rem', 'maxHeight': '10rem'}}>
   
   <div className="card-body" onClick={props.parentClick}>
-  <img name={props.image} src={"./images/" + props.image  + ".JPG"}/>
+  <img name={props.image} src={"./images/" + props.image  + ".jpg"}/>
   
   </div>
   
