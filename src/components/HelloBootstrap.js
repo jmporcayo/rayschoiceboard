@@ -38,6 +38,10 @@ class HelloBootstrap extends React.Component {
 
   responseGoogle = (response) => {
     console.log(response);
+    // if user has a googleID fetch cards else create new entry
+    this.setState({
+      user : response.profileObj
+    })
   }
   
   render(){
