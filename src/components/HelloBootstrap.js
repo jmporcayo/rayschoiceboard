@@ -1,6 +1,6 @@
 import React from "react";
 import "./HelloBootstrap.css";
-
+import GoogleLogin from 'react-google-login';
 
   // build an array of url
   var imageUrl = [
@@ -21,8 +21,9 @@ class HelloBootstrap extends React.Component {
   constructor(props){
     super(props);
     
+    this.state = {user: null}
  
-   
+   this.responseGoogle = this.responseGoogle.bind(this);
    this.cardClick = this.cardClick.bind(this);
   }
 
@@ -34,12 +35,23 @@ class HelloBootstrap extends React.Component {
       currentImage : e.target.name
     })
   }
+
+  responseGoogle = (response) => {
+    console.log(response);
+  }
   
   render(){
-   
-
-
-
+   if(this.state.user === null){
+     //Google Sign In
+     return(
+      <GoogleLogin
+    clientId="201772841702-gaeka3q6ia6biin69479jcd2ig971hro.apps.googleusercontent.com"
+    buttonText="Login"
+    onSuccess={this.responseGoogle}
+    onFailure={this.responseGoogle}
+  />
+     )
+   }else{
     return(
       <div>
       <div className="container">
@@ -69,18 +81,25 @@ class HelloBootstrap extends React.Component {
       </div>
 
     )}
- 
+    }
 
 };
 
 function ImageCard(props){
+  var image = {}
+  if (props.image === "washyourhands") {
+    image = <img name={props.image} src={"./images/" + props.image  + ".gif"}/>
+  }
+  else {
+    image = <img name={props.image} src={"./images/" + props.image  + ".jpg"}/>
+  }
   return (
 
   <div className="card  mb-3" style={{'maxWidth': '10rem', 'maxHeight': '10rem'}}>
   
   <div className="card-body" onClick={props.parentClick}>
-  <img name={props.image} src={"./images/" + props.image  + ".jpg"}/>
-  
+  {/* <img name={props.image} src={"./images/" + props.image  + ".jpg"}/> */}
+  {image}
   </div>
   
 </div>
