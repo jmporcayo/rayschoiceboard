@@ -8,12 +8,13 @@ import "./HelloBootstrap.css";
     "potty",
     "brushyourteeth",
     "getdressed",
-    "book",
+    "books",
     "juice",
     "snack",
     "thirsty",
     "toys",
     "sleep",
+    "kindle",
   ];
 
 class HelloBootstrap extends React.Component {
