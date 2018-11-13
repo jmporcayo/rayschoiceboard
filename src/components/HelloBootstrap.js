@@ -58,7 +58,7 @@ class HelloBootstrap extends React.Component {
    }else{
     return(
       <div>
-      <div className="container-fluid">
+      <div className="container">
 
         {/* Begin NavBar */}
         <nav className="navbar">
