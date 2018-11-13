@@ -79,11 +79,8 @@ class HelloBootstrap extends React.Component {
         {/* End jumbotron */}
 
     {/* name of my react component */}
-    <div className="row">
-    <div className="col-md-12">
       { imageUrl.map(x => <ImageCard image={x} parentClick={this.cardClick} />) }   
-        </div>  
-        </div>
+          
       </div>
       </div>
 
