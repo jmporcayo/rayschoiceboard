@@ -15,7 +15,6 @@ import GoogleLogin from 'react-google-login';
     "toys",
     "sleep",
     "kindle",
-    "washyourhands",
   ];
 
 class HelloBootstrap extends React.Component {
@@ -59,7 +58,7 @@ class HelloBootstrap extends React.Component {
    }else{
     return(
       <div>
-      <div className="container">
+      <div className="container-fluid">
 
         {/* Begin NavBar */}
         <nav className="navbar">
@@ -80,8 +79,11 @@ class HelloBootstrap extends React.Component {
         {/* End jumbotron */}
 
     {/* name of my react component */}
+    <div className="row">
+    <div className="col-md-12">
       { imageUrl.map(x => <ImageCard image={x} parentClick={this.cardClick} />) }   
-          
+        </div>  
+        </div>
       </div>
       </div>
 
