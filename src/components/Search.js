@@ -15,7 +15,7 @@ class Search extends Component {
       
       { console.log(data);
         this.setState({
-        results: data.photos.photo[5].title           
+        results: data.photos.photo[0]           
         })
       })
   }
@@ -40,7 +40,7 @@ class Search extends Component {
     const selectedImage = this.imageURL(this.state.results);
     return (
       <div className="flickr-results">
-      <form>
+      <form className="query">
         <input
           placeholder="Search for..."
           ref={input => this.search = input}
