@@ -9,8 +9,9 @@
 #### Uses Google Analytics to capture live users interaction. *See screenshot in images folder.
 
 
-###### Icebox feature: The user will be able to log in to their profile and add new cards in addition to the 12 static cards provided.
-###### User login is stored in server.js with express installed. Routing has not been established.
+#####  Icebox features: 
+###### The user will be able to log in to their profile and add new cards in addition to the 12 static cards provided.
+###### User login Passport & MongoDB logic in server.js with express installed. Routing has not been established.
 ###### In the future we would like to replace all .jpg with .gif files and use ASL alongside Text-to-Speech.
 
 
