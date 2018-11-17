@@ -2,6 +2,8 @@ import React from "react";
 import "./HelloBootstrap.css";
 import GoogleLogin from 'react-google-login';
 
+
+
   // build an array of url
   var imageUrl = [
     "shower",
@@ -62,20 +64,30 @@ class HelloBootstrap extends React.Component {
       <div className="container">
 
         {/* Begin NavBar */}
-        <div className="navbar">
-  
-           <div className="dropdown">
-           <button className="dropbtn">MORE 
-             <i className="fa fa-caret-down"></i>
-           </button>
-               <div className="dropdown-content">
-                  <a href="#">FAQ</a>
-                  <a href="#">About Us</a>
-                  <a href="#">Contribute</a>
-               </div>
-           </div> 
-        </div>
+       
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+              <a className="navbar-brand" href="#"></a>
+              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul className="navbar-nav">
 
+                      <li className="nav-item active">
+                        <a className="nav-link" href="#">FAQ</a>
+                      </li>
+
+                      <li className="nav-item active">
+                        <a className="nav-link" href="#">About Us</a>
+                      </li>
+
+                      <li className="nav-item active">
+                        <a className="nav-link" href="#">Contribute</a>
+                      </li>
+                      
+                    </ul>
+          </div>
+        </nav>
 
         {/* End NavBar */}
 

@@ -1,82 +1,18 @@
 body {
-    background-color: #9ee4d6;
+    background-color: #ff9c3a;
 }
 
-
-.navbar {
-    background-color: #fdc835;
+.bg-light {
+    background-color: #ff9c3a!important;
     background-image: url("/client/public/images/rayspngedit2.png");
-    color: #ffffff;
-    width: 100%;
-}
-
-.brand {
-    color: #ffffff;
-}
-
-.navbar {
-    overflow: hidden;
-    background-color: rgb(255, 145, 72);
-    font-family: Ariel, comic-sans;
-}
-
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+    font-family: 'Sigmar One', cursive;
 }
 
 .jumbotron {
+    width: 100%;
+    font-family: 'Sigmar One', cursive;
     text-align: center;
+    background-image: url("/client/public/images/rayspngedit2.png");
     background-color: #9befe7;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -90,3 +26,5 @@ img {
     width: 100px;
     height: 100px;
 }
+
+
