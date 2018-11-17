@@ -1,44 +1,23 @@
 body {
-    background-color: #9ee4d6;
+    background-color: #ff9c3a;
+}
+
+.bg-light {
+    background-color: #ff9c3a!important;
+    background-image: url("/client/public/images/rayspngedit2.png");
+    font-family: 'Sigmar One', cursive;
 }
 
 
-.navbar {
-    background-color: #fdc835;
-    color: #ffffff;
-    width: 100%;
-}
-
-.brand {
-    color: #ffffff;
-}
-
-.navbar ul {
-    width: 100%;
-}
-
-.navbar li {
-    text-decoration: none;
-    display: inline-block;
-    width: 33%;
-    padding: 30px;
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-}
-
-.navbar li a {
-    color: #fff;
-    font-size: 30px;
-}
 
 .jumbotron {
+    width: 100%;
+    font-family: 'Sigmar One', cursive;
     text-align: center;
+    background-image: url("/client/public/images/rayspngedit2.png");
     background-color: #9befe7;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 .card {
     display: inline-block;
     margin: 20px;

@@ -2,6 +2,8 @@ import React from "react";
 import "./HelloBootstrap.css";
 import GoogleLogin from 'react-google-login';
 
+
+
   // build an array of url
   var imageUrl = [
     "shower",
@@ -15,6 +17,7 @@ import GoogleLogin from 'react-google-login';
     "toys",
     "sleep",
     "kindle",
+    "washyourhands"
   ];
 
 class HelloBootstrap extends React.Component {
@@ -61,13 +64,29 @@ class HelloBootstrap extends React.Component {
       <div className="container">
 
         {/* Begin NavBar */}
-        <nav className="navbar">
-            <ul>
-              <li className="clickygame">
-              <a href="/">Ray's Choice Board</a>
-              </li>
-              
-              </ul>
+       
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+              <a className="navbar-brand" href="#"></a>
+              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul className="navbar-nav">
+
+                      <li className="nav-item active">
+                        <a className="nav-link" href="#">FAQ</a>
+                      </li>
+
+                      <li className="nav-item active">
+                        <a className="nav-link" href="#">About Us</a>
+                      </li>
+
+                      <li className="nav-item active">
+                        <a className="nav-link" href="#">Contribute</a>
+                      </li>
+                      
+                    </ul>
+          </div>
         </nav>
 
         {/* End NavBar */}
@@ -79,7 +98,7 @@ class HelloBootstrap extends React.Component {
         {/* End jumbotron */}
 
     {/* name of my react component */}
-      { imageUrl.map(x => <ImageCard key={x.id} image={x} parentClick={this.cardClick} />) }   
+      { imageUrl.map(x => <ImageCard image={x} parentClick={this.cardClick} />) }   
           
       </div>
       </div>
@@ -109,11 +128,8 @@ function ImageCard(props){
 </div>
 )}
 
-// blank comment
 
 
 
 export default HelloBootstrap;
-
-
 
